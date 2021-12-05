@@ -94,7 +94,9 @@ profession = {"student": "Student", "receptionist at an office for a clothing st
              "To either be a designer, artist or an animator.": "Student", "None of the above.": "Unemployed", 
               "Full time worker": "Worker", "College Student": "Student", "I have job, plain n simple": "Worker",
              "Medical laboratory technician ": "Nursing/Medical", "Nurse": "Nursing/Medical", "Nursing/Medical ": "Nursing/Medical",
-             "I don't have a profession.": "Unemployed", "Berklee Student": "Student"}
+             "I don't have a profession.": "Unemployed", "Berklee Student": "Student", "College student/Dietary Aide: "Student", 
+             "Receptionist": "Receptionist", "I'm a graduated student w/ a BA and in the process of becoming a teacher": "Teacher", 
+             "Elementary school offic worker": "Receptionist"}
 for key in profession:
     x = key
     df = df.replace(x,f"{profession[x]}")
