@@ -10,7 +10,7 @@ import openpyxl as openpyxl
 
 st.title("Analyzing Characteristics of K-Pop Listeners")
 
-df = pd.read_excel('KPOP Data.xlsx', engine='openpyxl')
+df = pd.read_excel('\Users\Kaileen\Documents\UCI\uci fall 2021\math 10\KPOP Data.xlsx', engine='openpyxl')
 
 #first, clean the data
 
