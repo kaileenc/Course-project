@@ -6,11 +6,10 @@ import sklearn
 from sklearn.cluster import KMeans
 import altair as alt
 import seaborn as sns
-import openpyxl as openpyxl
 
 st.title("Analyzing Characteristics of K-Pop Listeners")
 
-df = pd.read_excel(r'C:\Users\Kaileen\Documents\UCI\"uci fall 2021\Math 10"\KPOPData.xlsx',engine='openpyxl')
+df = pd.read_('KPOPData.csv')
                    
 #first, clean the data
 
