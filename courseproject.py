@@ -135,10 +135,8 @@ st.write(f"We can see in this chart K-Pop listeners' responses to {x_axis} compa
 st.write("Additionally, we can see the number of responses that are at the same point.")
 st.write("While we did use clustering in this chart, there isn't much information we can obtain from it with these variables.")
 
-#altair bar chart of which groups are surveyees' favorites
-
 st.header("2. Listeners' favorite groups")
-
+#altair bar chart of which groups are surveyees' favorites
 group_chart = alt.Chart(df).mark_bar().encode(
     x = "Which is your favourite K-Pop group?",
     y = "count()"
@@ -148,10 +146,11 @@ st.altair_chart(group_chart, use_container_width = True)
 st.write("In this chart, we can see listeners favorite K-Pop groups and how many chose that group. The column 'other(s)' represents those who put more than one group as their favorite.")
 st.write("We can see that most people like BTS the most. Next are those who like more than one group which may or may not include BTS.")
 
-# altair chart comparing listener's demographics with their favorite groups
-
 st.header("3. Fan demographics and their favorite groups")
 st.subheader("First, we will compare a listener's favorite group with their age and which country they are from.")
+st.write("You can interact with this altair chart by clicking and dragging to view the colors of each point.")
+
+# altair chart comparing listener's demographics with their favorite groups
 brush = alt.selection_interval(empty='none')
 
 listener_chart = alt.Chart(df).mark_point().encode(
@@ -185,6 +184,7 @@ st.pyplot(g)
 st.write("Because so many of the surveyees are BTS fans, we will compare BTS fans and other K-Pop fans in general. We can see across all K-Pop fans that their professions range greatly from students to medical professionals.")
 
 st.write("Despite the belief that K-Pop fans are all teenage girls, we can see through these two charts that is actually not true. While BTS has the most diverse fandom age-wise, all K-Pop fans come from different walks of life as evident from this survey.")
+
 #extra Streamlit component that is a sidebar with a Table of Contents
 with st.sidebar:
     st.write("Table of Contents")
