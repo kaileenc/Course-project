@@ -9,7 +9,7 @@ import seaborn as sns
 
 st.title("Analyzing Characteristics of K-Pop Listeners")
 
-df = pd.read_('KPOPData.csv')
+df = pd.read_csv('KPOP_Data.csv')
                    
 #first, clean the data
 
