@@ -205,5 +205,3 @@ st.write("The code to count the number of points on the graph in the tooltip is 
 st.write("The code to make a seaborn chart is from https://seaborn.pydata.org/tutorial/axis_grids.html")
 st.write("The code to display the seaborn chart in Streamlit is from https://pythonwife.com/seaborn-with-streamlit/")
 
-st.write(sns.__version__)
-st.write(openpyxl.__version__)
