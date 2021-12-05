@@ -103,7 +103,7 @@ for key in profession:
 df["What is your profession?"].value_counts()
 
 #shortening the results of the column "What is your gender?" so the seaborn chart is easier to read
-gender = {"Female":"F","Male":"M"}
+gender = {"Female":"F","Male":"M","Transgender":"Trans"}
 for key in gender:
     x = key
     df = df.replace(x,f"{gender[x]}")
